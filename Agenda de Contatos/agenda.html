@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="icon" type="imagem/png" href="box.png" />
+    <link rel="stylesheet" href="agenda.css">
+</head>
+<body>
+    <header>
+        <img src="agenda.png" class="icon">
+        <h1 class="titulo">Agenda de Contatos</h1>
+    </header>
+    <main>
+        <select name="opcao" id="selectOpcao">
+            <option value="">Selecione uma opção!</option>
+            <option value="Cadastrar">Cadastrar novo contato.</option>
+            <option value="Excluir">Excluir um contato.</option>
+            <option value="Alterar">Alterar dados de um contato.</option>
+            <option value="ConsultarDados">Consultar dados de um contato.</option>
+            <option value="Listar">Listar os Contatos.</option>
+            <option value="Salvar">Salvar os Contatos.</option>
+        </select>
+        <section>
+            <label>Nome: <input type="text" placeholder="Digite o Nome" id="inNome" disabled></label>
+            <label>Endereço: <input type="text" placeholder="Digite o Endereço do Contato" id="inEndereço" disabled></label>
+            <label>Telefone: <input type="number" placeholder="(XX) XXXXX - XXXX" id="inTelefone" disabled></label>
+            <label>CPF: <input type="number" placeholder="XXX.XXX.XXX - XX" id="inCpf" disabled></label>
+            <label>Data de nascimento: <input type="number" placeholder="XX/XX/XXXX" id="inDtNascimento" disabled></label>
+            <div>
+                <input type="button" value="Ok" id="btOk">
+            </div>
+            <pre id="outResultado">Resultado</pre> 
+        </section>
+        <section class="sectionResultado">
+            
+        </section>
+    </main>
+    
+    <script src="./agendaInterface.js" type="module"></script>
+
+</body>
+</html>
